@@ -1,3 +1,23 @@
-.backfon {
-    background-color: blue;
+header{
+    background-color: #FFFFFF;
+    vertical-align: top;
+    position: absolute;
+    width: 1600px;
+    height: 80px;
+}
+.ws {
+    vertical-align: center;
+    position: absolute;
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+}
+nav {
+    vertical-align: center;
+    position: absolute;
+    width: 294px;
+    height: 16px;
+    left: 453px;
+    top: 32px;
 }
