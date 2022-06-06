@@ -2,91 +2,103 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Студия</title>
-    <!--<link rel="stylesheet" href="./css/styles.css" />-->
   </head>
   <body>
     <header>
-      <a href="index.html" class="ws">WebStudio</a>
+      <a class="logo" href="./index.html"
+        >Web<span class="logo-black">Studio</span></a
+      >
       <nav>
         <ul>
           <li>
-            <a href="index.html">Студия</a>
+            <a class="link current" target="_parent" href="./index.html"
+              >Студия</a
+            >
           </li>
           <li>
-            <a href="portfolio.html">Портфолио</a>
+            <a class="link" href="./portfolio.html">Портфолио</a>
           </li>
           <li>
-            <a href="#">Контакты</a>
+            <a class="link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
       <ul>
-        <li>
+        <li class="link">
           <a href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li>
+        <li class="link">
           <a href="tel:+380961111111">+38 096 111 11 11</a>
         </li>
       </ul>
     </header>
     <main>
-      <section>
-        <!-- Эфективные решения для вашего бизнеса-->
-        <h1>ЭФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button">Заказать услугу</button>
+      <!-- Эфективные решения для вашего бизнеса-->
+      <section class="section bg-order">
+        <div class="hero">
+          <h1 class="hero-title">ЭФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
+          <button type="button" class="hero-btn">Заказать услугу</button>
+        </div>
       </section>
-      <section>
-        <!--Особенности-->
-        <h2>"Особенности" невидимый текст</h2>
-        <ul>
-          <li>
-            <h3>ВНИМАНИЕ К ДЕТАЛЯМ</h3>
-            <p>
-              Идейные соображения, а также начало повседневной работы по
-              формированию позиции.
-            </p>
-          </li>
-          <li>
-            <h3>ПУНКТУАЛЬНОСТЬ</h3>
-            <p>
-              Задача организации, в особенности же рамки и место обучения кадров
-              влечет за собой.
-            </p>
-          </li>
-          <li>
-            <h3>ПЛАНИРОВАНИЕ</h3>
-            <p>
-              Равным образом консультация с широким активом в значительной
-              степени обуславливает.
-            </p>
-          </li>
-          <li>
-            <h3>СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
-            <p>
-              Значимость этих проблем настолько очевидна, что реализация
-              плановых заданий.
-            </p>
-          </li>
-        </ul>
+      <!--Особенности-->
+      <section class="section">
+        <div class="container">
+          <h2 class="none">"Особенности" невидимый текст</h2>
+          <ul class="section-list">
+            <li>
+              <h3 class="title">ВНИМАНИЕ К ДЕТАЛЯМ</h3>
+              <p class="text">
+                Идейные соображения, а также начало повседневной работы по
+                формированию позиции.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">ПУНКТУАЛЬНОСТЬ</h3>
+              <p class="text">
+                Задача организации, в особенности же рамки и место обучения
+                кадров влечет за собой.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">ПЛАНИРОВАНИЕ</h3>
+              <p class="text">
+                Равным образом консультация с широким активом в значительной
+                степени обуславливает.
+              </p>
+            </li>
+            <li>
+              <h3 class="title">СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h3>
+              <p class="text">
+                Значимость этих проблем настолько очевидна, что реализация
+                плановых заданий.
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
-      <section>
-        <!--ЧЕМ МЫ ЗАНИМАЕМСЯ-->
-        <h2>Чем мы занимаемся</h2>
-        <ul>
-          <li>
-            <img src="./images/wwd1.jpg" alt="Компьютер" width="370px" />
-          </li>
-          <li>
-            <img src="./images/wwd2.jpg" alt="Смартфон" width="370px" />
-          </li>
-          <li>
-            <img src="./images/wwd3.jpg" alt="Планшет" width="370px" />
-          </li>
-        </ul>
+      <!--ЧЕМ МЫ ЗАНИМАЕМСЯ-->
+      <section class="section">
+        <div class="conteiner">
+          <h2 class="section-title">Чем мы занимаемся</h2>
+          <ul>
+            <li>
+              <img src="./images/wwd1.jpg" alt="Компьютер" width="370px" />
+            </li>
+            <li>
+              <img src="./images/wwd2.jpg" alt="Смартфон" width="370px" />
+            </li>
+            <li>
+              <img src="./images/wwd3.jpg" alt="Планшет" width="370px" />
+            </li>
+          </ul>
+        </div>
       </section>
+      <!--НАША КОМАНДА-->
       <section>
-        <!--НАША КОМАНДА-->
         <h2>Наша команда</h2>
         <ul>
           <li>
