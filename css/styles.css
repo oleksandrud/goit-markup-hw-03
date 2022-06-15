@@ -54,7 +54,22 @@ ul {
 }
 
 /* навигация */
-nav .link {
+.nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
+.nav-list{
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav-list .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-list .link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -63,17 +78,26 @@ nav .link {
     text-decoration: none;
 }
 
-.nav .link:hover,
-.nav .link:focus {
+.nav-list .link:hover,
+.nav-list .link:focus {
     color: var(--accent-color);
 }
 
-nav .current {
+.nav-list .current {
     color: var(--accent-color);
 }
 
-/* авторизация */
-.auth .link {
+/* контакты */
+
+.contact{
+    display: flex;
+    margin-left: auto;
+}
+.contact .item:not(:last-child){
+    margin-right: 50px;
+}
+
+.contact .link {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -82,76 +106,131 @@ nav .current {
     text-decoration: none;
 }
 
-.auth .link:hover,
-.auth .link:focus {
+.contact .link:hover,
+.contact .link:focus {
     color: var(--accent-color);
 }
 
-/* заказ */
-.hero {
-    background-color: var(--background-black);
+/* секциии */
+.section {
+    background: var(--background-main);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.hero .hero-title {
+/* заказ */
+
+.bg-order {
+    background: var(--background-black);
+}
+.bg-order {
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero .title {
+    margin-bottom: 20px;
     color: var(--hero-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
-.hero .hero-btn {
+.hero .btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    
     color: var(--hero-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    background: #2196F3;
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
     border-radius: 4px;
     cursor: pointer;
+    min-width: 200px;
 }
 
-/* секция деятельность и преимущества */
-.section {
-    background: var(--background-main);
+/* секция деятельность */
+.section-title{
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.activ-list {
+    display: flex;
+}
+.activ-list .item:not(:last-child) {
+    margin-right: 30px;
 }
 
 /* преимущества */
+.diferent {
+    padding-bottom: 0;
+}
+
+.none {
+    display: none;
+}
+.section-list {
+    display: flex;
+}
+.section-list .item:not(:last-child) {
+    margin-right: 30px;
+}
+
 .section-list .title {
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
 .section-list .text {
     line-height: 1.71;
     color: var(--text-color);
-}
-
-/* деятельность */
-.section-title {
-    font-size: 36px;
-    line-height: 1.67;
-    text-align: center;
+    min-width: 270px;
 }
 
 /* наша команда */
-.section-team {
+.team {
     background: #F5F4FA;
 }
 
-.section-list .name {
+.list-team {
+    display: flex;
+}
+.list-team .item-team {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0 0 4px 4px ;
+}
+.list-team .item:not(:last-child) {
+    margin-right: 30px;
+}
+.worker {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.list-team .name {
+    margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
 }
-
-.section-list .job {
+.list-team .job {
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.19;
@@ -160,7 +239,8 @@ nav .current {
 
 /* подвал */
 footer {
-    background-color: var(--background-black);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .logo-white {
