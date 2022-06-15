@@ -15,12 +15,32 @@ body {
     letter-spacing: 0.03em;
 }
 
+h1,h2,h3,p {
+    margin: 0;
+}
+
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.conteiner {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* лого */
+
+.header {
+    display: flex;
+    align-items: center;
+}
 .logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+
     font-family: Raleway, sans-serif;
     color: var(--accent-color);
     font-weight: 700;
@@ -29,7 +49,6 @@ ul {
     letter-spacing: 0.03em;
     text-decoration: none;
 }
-
 .logo-black {
     color: var(--primiry-text-color);
 }
