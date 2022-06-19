@@ -54,7 +54,7 @@ ul {
 }
 
 /* навигация */
-/* */
+
 .nav {
     display: flex;
     align-items: center;
@@ -162,7 +162,7 @@ ul {
     min-width: 200px;
 }
 
-/* секция деятельность */
+/* деятельность */
 .section-title{
     font-size: 36px;
     line-height: 1.16;
@@ -239,13 +239,23 @@ ul {
 }
 
 /* подвал */
-footer {
+.footer {
     padding-top: 60px;
     padding-bottom: 60px;
 }
 
 .logo-white {
     color: var(--hero-color);
+}
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.list-adress .item:not(:last-child){
+    margin-bottom: 5px;
 }
 
 .list-adress .link {
@@ -267,9 +277,18 @@ footer {
 
 /* портфолио */
 
+.main {
+    background: var(--background-main);
+}
+
+.menu .item:not(:last-child) {
+    margin-right: 8px ;
+}
+
 /* кнопки */
 .button {
-    font-family: inherit;
+
+
     font-weight: 500px;
     font-size: 16px;
     line-height: 1.62;
@@ -277,6 +296,7 @@ footer {
     letter-spacing: 0.03em;
     color: #212121;
     background: #F5F4FA;
+    border: 1px solid transparent;
     border-radius: 4px;
     cursor: pointer;
 }
@@ -289,13 +309,41 @@ footer {
 
 /* главная */
 
-.menu-title {
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards .item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    background: var(--hero-color);
+}
+
+.cards .item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.cards .item:nth-child(-n + 3) {
+    margin-bottom: 0;
+}
+
+.border {
+    padding-left: 24px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: left;
+    border: 1px solid #EEEEEE;
+    border-top: 1px solid var(--hero-color);
+}
+.cards-title {
+    margin-bottom: 4px;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.menu-text {
+.cards-text {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
