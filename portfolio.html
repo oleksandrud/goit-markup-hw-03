@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
     <title>Портфолио</title>
   </head>
   <body>
@@ -34,7 +34,7 @@
           </li>
         </ul>
       </nav>
-      <ul class="contact">
+      <ul class="cards">
         <li class="item">
           <a class="link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
         </li>
@@ -44,100 +44,87 @@
       </ul>
     </div>
     </header>
-    <main>
+    <main class="main">
       <section class="section">
-        <h1>Меню сайта</h1>
-        <ul>
-          <li>
+        <h1 class="none">Меню сайта</h1>
+        <ul class="menu">
+          <li class="item">
             <button class="button" type="button">Все</button>
           </li>
-          <li>
+          <li class="item">
             <button class="button" type="button">Веб-сайты</button>
           </li>
-          <li>
+          <li class="item">
             <button class="button" type="button">Приложения</button>
           </li>
-          <li>
+          <li class="item">
             <button class="button" type="button">Дизайн</button>
           </li>
-          <li>
+          <li class="item">
             <button class="button" type="button">Маркетинг</button>
           </li>
         </ul>
-        <ul>
-          <li>
-            <img src="./images/tehnokrad.jpg" alt="Технокряк" width="370px" />
-            <h2 class="menu-title">Технокряк</h2>
-            <p class="menu-text">Веб-сайт</p>
+        <ul class="cards">
+          <li class="item">
+            <img src="./images/tehnokrad.jpg" alt="Технокряк" width=370 />
+            <div class="border">
+              <h2 class="menu-title">Технокряк</h2>
+              <p class="menu-text">Веб-сайт</p>
+            </div>
+            </li>
+          <li class="item">
+            <img src="./images/poster.jpg" alt="Постер New Orlean vs Golden Star" width=370/>
+            <div class="border">
+              <h2 class="cards-title">Постер New Orlean vs Golden Star</h2>
+              <p class="cards-text">Дизайн</p>
+            </div>
           </li>
-          <li>
-            <img
-              src="./images/poster.jpg"
-              alt="Постер New Orlean vs Golden Star"
-              width="370px"
-            />
-            <h2 class="menu-title">Постер New Orlean vs Golden Star</h2>
-            <p class="menu-text">Дизайн</p>
+          <li class="item">
+            <img src="./images/restoran-seafood.jpg" alt="Ресторан Seafood" width=370/>
+            <div class="border">
+              <h2 class="menu-title"> Ресторан Seafood </h2>
+              <p class="menu-text">Приложение</p>
+            </div>
           </li>
-          <li>
-            <img
-              src="./images/restoran-seafood.jpg"
-              alt="Ресторан Seafood"
-              width="370px"
-            />
-            <h2 class="menu-title">Ресторан Seafood</h2>
-            <p class="menu-text">Приложение</p>
+          <li class="item">
+            <img src="./images/project-prime.jpg" alt="Проект Prime" width=370 />
+            <div class="border">
+              <h2 class="menu-title">Проект Prime</h2>
+              <p class="menu-text">Маркетинг</p>
+            </div>
           </li>
-          <li>
-            <img
-              src="./images/project-prime.jpg"
-              alt="Проект Prime"
-              width="370px"
-            />
-            <h2 class="menu-title">Проект Prime</h2>
-            <p class="menu-text">Маркетинг</p>
+          <li class="item">
+            <img src="./images/project-boxes.jpg" alt="Проект Boxes" width=370/>
+            <div class="border">
+              <h2 class="menu-text">Проект Boxes</h2>
+              <p class="menu-text">Приложение</p>
+            </div>
           </li>
-          <li>
-            <img
-              src="./images/project-boxes.jpg"
-              alt="Проект Boxes"
-              width="370px"
-            />
-            <h2 class="menu-text">Проект Boxes</h2>
-            <p class="menu-text">Приложение</p>
+          <li class="item">
+            <img src="./images/web-site.jpg" alt="Inspiration has no Borders" width=370/>
+            <div class="border">
+              <h2 class="menu-title">Inspiration has no Borders</h2>
+              <p class="menu-text">Веб-сайт</p>
+            </div>
           </li>
-          <li>
-            <img
-              src="./images/web-site.jpg"
-              alt="Inspiration has no Borders"
-              width="370px"
-            />
-            <h2 class="menu-title">Inspiration has no Borders</h2>
-            <p class="menu-text">Веб-сайт</p>
+          <li class="item">
+            <img src="./images/limited-edition.jpg" alt="Издание Limited Edition" width=370>
+            <div class="border">
+              <h2 class="menu-title">Издание Limited Edition</h2>
+              <p class="menu-text">Дизайн</p>
+            </div>
           </li>
-          <li>
-            <img
-              src="./images/limited-edition.jpg"
-              alt="Издание Limited Edition"
-              width="370px"
-            />
-            <h2 class="menu-title">Издание Limited Edition</h2>
-            <p class="menu-text">Дизайн</p>
-          </li>
-          <li>
-            <img
-              src="./images/project-lab.jpg"
-              alt="Проект LAB"
-              width="370px"
-            />
+          <li class="item">
+            <img src="./images/project-lab.jpg" alt="Проект LAB" width=370/>
+            
             <h2 class="menu-title">Проект LAB</h2>
             <p class="menu-text">Маркетинг</p>
           </li>
-          <li>
+          <li class="item">
             <img
               src="./images/growing-business.jpg"
               alt="Growing Business"
-              width="370px"
+              width=370
             />
             <h2 class="menu-title">Growing Business</h2>
             <p class="menu-text">Приложение</p>
